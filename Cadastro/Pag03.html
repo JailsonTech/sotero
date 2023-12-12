@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag03</title>
+    <link rel="stylesheet" href="/Styles/styleGeral.css">
+      <link rel="stylesheet" href="/Styles/page03.css">
+  </head>
+
+  <body>
+    <!--......... SECTION - CONTAINER GERAL....................-->
+    <section class='conteudo'>
+      <header class='cadastro'>
+        <h2 class='textCadastro'>CADASTRO</h2>
+      </header>
+
+      <!--......Retorno pág Inicial..............-->
+   <div class="returnHome">
+    <figure class="figureHome">
+       <a href="/index.html" class="link">
+          <img alt="casa" src="/Images/casa.png" class="homePage1" />
+       </a>
+       <figcaption class="ficapt">Pág Inicial</figcaption>
+    </figure>
+ </div>
+
+      <!--.........LINHA 3 - CRIAR CONTA....................-->
+
+      <div class="formContainer3">
+        <header class="perfil">
+          <h2 class="textPerfil">Perfil</h2>
+          <div class='containerFechar'>
+            <a href="/index.html" class="link">    
+               <h1 class='fecharForm'>X</h1>         
+            </a>
+          </div>
+        </header>
+        <!--.........AVISO DADOS....................-->
+        <div class="avisoDados3">
+          <p>Seu ID será visto por outros jogadores</p>
+          <p>Exemplo: sultan, pavan, mar_bravo </p>
+        </div>
+
+        <!--.........FORMULÁRIO....................-->
+
+        <div class="cadastrar3">
+          <form class="formPag3">
+
+            <div class="Input3">
+              <label for="ID">Id jogador</label>
+              <input id="ID" type="text" class="Jogador" />
+            </div>
+
+            <div class="Input3">
+              <label for="email">Endereço email</label>
+              <input type="email" id="email" required class="email" />
+            </div>
+
+            <div class="Input3">
+              <label for="password">Senha</label>
+              <input type="password" id="password" required class="email" />
+            </div>
+          </form>
+            <div class="containerButtons">
+              <a href="/Cadastro/Pag02.html">
+                <button class="button1">Voltar</button>
+              </a>
+              <a href="/Cadastro/Pag04.html">
+                <button class="button2">Avançar</button>
+              </a>
+            </div>
+            <div class='numPag'>
+              <p class='pNumPag'>3</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>

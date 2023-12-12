@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Styles/styleGeral.css">
+    <link rel="stylesheet" href="/Styles/login.css">
+    <script src="/Functions/myScript.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <!--.............TÍTULO LOGIN........-->
+        <header class="login">
+            <h2 class="text-Login">LOGIN</h2>
+        </header>
+        <!--......Retorno pág Inicial..............-->
+   <div class="returnHome">
+    <figure class="figureHome">
+        <a href="/index.html" class="link">
+          <img alt="casa" src="/Images/casa.png" class="homePage1" />
+       </a>
+       <figcaption class="ficapt">Pág Inicial</figcaption>
+    </figure>
+ </div>
+
+         <!--....TEXTO SOTERO GAMES.....-->
+        <div class="container-form">
+            <header class="soteroGames">
+               <h2 class="text-sotero">SOTERO GAMES</h2>
+               <!--..........Retornar home/Mobile........-->
+
+               <div class='containerFechar'>
+                <a href="/index.html" class="link">      
+                     <h1 class='fecharForm'>X</h1>         
+                  </a>
+               </div>
+
+
+            </header>
+
+           <!--.........FORMULÁRIO.................-->
+            <form class="form">
+                <div class="field">
+                    <label for="e-mail">Email</label>
+                    <input type="email" name='email' id='e-mail' />
+                </div>
+                <div class="field">
+                    <label for="password">Senha</label>
+                    <input type="password" name='password' id="password" />
+                </div>
+                <div class="actions">
+                    <input class="botao" type="submit" value="Entrar" onclick="aviso()"/>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

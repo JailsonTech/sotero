@@ -1,0 +1,100 @@
+.footer{
+  background-image:linear-gradient(#000, #020136e9 50%,#000);
+  padding:10px 0;
+  margin:0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width:100%;
+  height:auto;
+}
+div.boxContainer{
+  display:flex;
+}
+div.boxTexto{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2.titleSotero, h2.titleGames{
+  margin:0;
+  padding:0;
+  color:#fffabf;
+  font-size: clamp(1rem, 1rem + .5vw, 2rem);
+  max-width: max-content;
+  height: max-content;
+}
+figure#fenixFooter{
+  margin:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0;
+  max-width: max-content;
+  height: auto;
+}
+/*...IMG FENIX...*/
+figure img.fenixFooter{
+    width: clamp(3.2rem, 2rem + 3vw, 15rem);
+}
+figure.whatsap, figure.facebook, figure.email{
+  color:#fff;
+  display:flex;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:auto;
+  margin:0;
+  padding:0;   
+ }
+ figcaption{
+  color:#fff;
+ }
+ /*...ÍCONES WHATSAPP E FACEBOOK...*/
+.imgWhatsap, .imgFacebook{
+ width: clamp(2.1rem, 1rem + 2vw, 5rem);
+ height:auto;
+ border-radius: 22px; 
+}
+.imgWhatsap:hover, .imgFacebook:hover{
+  border-radius: 22px; 
+  box-shadow:.5px .5px 5px #ffff0a  
+ }
+ .imgWhatsap:active, .imgFacebook:active{      
+  box-shadow:1px 1px 5px #0052bd;  
+  transform:scale(.98);
+ }
+ /*...ÍCONE EMAIL...*/
+.imgEmail{
+  width: clamp(2.1rem, 1rem + 2vw, 5rem);
+ border-radius: 5px; 
+ }
+ .imgEmail:hover{
+  border-radius: 5px; 
+  box-shadow:.5px .5px 5px #ffff0a 
+  }
+ .imgEmail:active{
+  box-shadow:1px 1px 5px #0052bd; 
+  transform:scale(.98);
+  }
+ 
+
+/*..........RESPONSIVIDADE FOOTER..........*/
+@media (max-width: 600px) {
+ .footer{
+   justify-content: space-between;
+   padding-left:20px;
+   padding-right:20px;
+ }
+ figure.whatsap, figure.facebook, figure.email{
+  display:block;
+  text-align: center;
+ }
+}
+@media (max-width: 350px) {
+   div.box-container{
+   display:block;
+ } 
+ }

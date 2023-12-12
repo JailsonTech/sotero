@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home</title>
+ <link rel="stylesheet" href="/Styles/styleGeral.css">
+ <link rel="stylesheet" href="/Styles/webHome.css">
+ <link rel="stylesheet" href="/Styles/footer.css">
+ <link rel="stylesheet" href="/Styles/mobileHome.css">
+ <script src="/Functions/myScript.js" type="text/javascript"></script>
+</head>
+<body>
+  
+  <!--.............. HEADER MOBILE ..........-->
+<section id='containerMobile' >
+  <figure id="fenixMobile">
+    <img alt="Fenix" src="/Images/fenixleft.png" class="fenixMobile"/> 
+  </figure>
+
+  <h1 class="text-sotero">Sotero Games</h1>
+  
+  <div id="menuContainer" >  <!--...MENU-mobile...-->  
+
+      <div class="dropdown-menu"><!--...DROPDOWN mobile...-->
+            <figure class="menuBarra">            
+              <img alt="Menu Barras" src="/Images/menuBar.png" class="menuBar" onclick="myFunction()"/> 
+            </figure>          
+        <div class="dropdown-content" id="myDropdown">          
+            <a class='MobileLink' href="/Login/login.html">Fazer Login</a>
+            <a class='MobileLink' href="/Cadastro/Pag01.html">Seja membro</a>
+            <a class='MobileLink' href="#" onclick="aviso()">+jogos</a>
+        </div>            
+      </div>
+
+  </div> 
+  
+</section><!--...fim HEADER-MOBILE...-->
+ 
+<!--.............. HEADER WEB ............-->
+<div class="containerHome">
+  <div class="containerDivs">
+     <div class="boxFenix">
+        <div class="soteroGames">
+          <h1 class="sotero">Sotero</h1>
+          <h1 class="games">Games</h1>
+        </div>
+        <figure class="figFenixHeader">
+           <img alt="Fenix" src="/Images/fenixleft.png" class="fenixHome"/> 
+        </figure>
+     </div>      
+      <!--............................-->
+      <div class="boxJogos" > <!--..DROPDOWN...+JOGOS..-->       
+          <h3 class="jogos" onclick="jogos()">+Jogos</h3>              
+          <div class="dropdownJogos" id="maisJogos">          
+              <a class='MobileLink' href="#" onclick="aviso()">Jogado</a>
+              <a class='MobileLink' href="#" onclick="aviso()">Zerado</a>
+              <a class='MobileLink' href="#" onclick="aviso()">Jogando</a>
+              <a class='MobileLink' href="#" onclick="aviso()">Opiniões</a>
+          </div> 
+      </div>   
+      <!--............................-->        
+      <nav class="boxCadastroLogin">
+        <a class="nav-a" href="/Cadastro/Pag01.html">
+          <h3 class="cadastre" >Seja membro</h3>
+        </a>
+        <a class="nav-a" href="/Login/login.html">
+          <h3 class="login" >Login</h3>
+        </a>
+      </nav>
+      <!--.............CARRINHO COMPRAS.......-->
+      <div class="compra">
+        <img class="carrinho" src="/Images/car-shop.png" alt="Carro compra" onclick="carShop()">
+        <div class="avisoCompra" id="car">
+        <h4 class="text-avisoCompra">
+          Não há nada no carrinho.<br>
+          Deixe de ser mão de figa!
+        </h4>
+        <img class="carrinho2" src="/Images/car-shop.png" alt="Carro compra"/>
+        <p class="produtos">0 produtos</p>
+      </div>
+   </div>
+  </div>   
+</div>
+ <!--............IMG EFEITO FENIX............-->
+
+ <div class="FundoEfeito">
+   <div class='ConteudoTextoManhas'>
+       <p class='textManhas'>"Quem não tem as manhas não entra não"</p>
+       <figure class='figFenixEfeito'>
+         <img alt="Fenix" src="/Images/fenixright.png" class="fenixEfeito"/> 
+       </figure>
+   </div>
+ </div>
+
+       <!--........ROW THIRD - SLIDE DE IMAGENS........-->
+
+ <div class="slideShow" >
+       <img class="imgGame img_game1" alt="game1" src="/Images/jogo_1.png">
+       
+       <img class="imgGame img_game2" alt="game2" src="/Images/jogo_2.png">
+   
+       <img class="imgGame img_game3" alt="game3" src="/Images/jogo_3.png"/>
+   
+       <img class="imgGame img_game4" alt="game4" src="/Images/jogo_4.png"/>
+ </div>
+    <!--..........ROW FOUR - IMAGENS LOGOS..........-->
+ <section id="container-categoria">
+    <div class="container-tipos">
+      <h3 class="texto-categoria">Categorias</h3>
+      <div class="container-tiposCatedoria"><!--..Categorias...-->
+        <ul class="ul-geral">
+          <li class="li-geral">
+            <p class="categoria-title">Aventura</p>
+            <ul class="ul-filho">
+              <li class="li-filho"><a href="#" onclick="aviso()">Death Stranding</a></li>
+              <li class="li-filho"><a href="#" onclick="aviso()">The Elder Scrolls V: Skyrim</a></li>
+              <li class="li-filho"><a href="#" onclick="aviso()">Don’t Starve Together</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="ul-geral">
+          <li class="li-geral">
+            <p class="categoria-title">Ficção</p>
+            <ul class="ul-filho">
+              <li class="li-filho"><a href="#" onclick="aviso()">Death Stranding</a></li>
+              <li class="li-filho"><a href="#" onclick="aviso()">The Elder Scrolls V: Skyrim</a></li>
+              <li class="li-filho"><a href="#" onclick="aviso()">Don’t Starve Together</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="ul-geral">
+          <li class="li-geral">
+              <p class="categoria-title">Infantil</p>
+              <ul class="ul-filho">
+                <li class="li-filho"><a href="#" onclick="aviso()">Death Stranding</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">The Elder Scrolls V: Skyrim</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">Don’t Starve Together</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="ul-geral">
+            <li class="li-geral">
+              <p class="categoria-title">Jogos</p>
+              <ul class="ul-filho">
+                <li class="li-filho"><a href="#" onclick="aviso()">Death Stranding</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">The Elder Scrolls V: Skyrim</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">Don’t Starve Together</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="ul-geral">
+            <li class="li-geral">
+              <p class="categoria-title">Policial</p>
+              <ul class="ul-filho">
+                <li class="li-filho"><a href="#" onclick="aviso()">Death Stranding</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">The Elder Scrolls V: Skyrim</a></li>
+                <li class="li-filho"><a href="#" onclick="aviso()">Don’t Starve Together</a></li>
+              </ul>
+            </li>
+          </ul> 
+      </div>
+      <!--...........CATEGORIA JOGOS - MOBILE.................-->
+      <div class="categoria-responsiva">        
+          <div class="container-p">
+            <h4 class="categoria-title">Aventura</h4>
+            <p class="p-filho">Death Stranding</p>
+            <p class="p-filho">The Elder Scrolls V: Skyrim</p>
+            <p class="p-filho">Don’t Starve Together</p>
+          </div>
+          <div class="container-p">
+            <h4 class="categoria-title">Ficção</h4>
+            <p class="p-filho">Death Stranding</p>
+            <p class="p-filho">The Elder Scrolls V: Skyrim</p>
+            <p class="p-filho">Don’t Starve Together</p>
+          </div>          
+          <div class="container-p">
+            <h4 class="categoria-title">Infantil</h4>
+            <p class="p-filho">Death Stranding</p>
+            <p class="p-filho">The Elder Scrolls V: Skyrim</p>
+            <p class="p-filho">Don’t Starve Together</p>
+          </div>
+          <div class="container-p">
+            <h4 class="categoria-title">Jogos</h4>
+            <p class="p-filho">Death Stranding</p>
+            <p class="p-filho">The Elder Scrolls V: Skyrim</p>
+            <p class="p-filho">Don’t Starve Together</p>
+          </div>          
+          <div class="container-p">
+            <h4 class="categoria-title">Policial</h4>
+            <p class="p-filho">Death Stranding</p>
+            <p class="p-filho">The Elder Scrolls V: Skyrim</p>
+            <p class="p-filho">Don’t Starve Together</p>
+          </div>
+      </div>
+    </div>
+    <!--.......IMAGEN LOGOTIPO JOGOS.......-->
+ <div class='container-logos'>  
+  <h3 class="classico">Clássicos</h3>
+   <div class='logos'> 
+       <img alt="BARBIE" class="logo-img" src="/Images/barbie.png"/>
+
+       <img alt="FARM" class="logo-img" src="/Images/big_farm.png"/>
+
+       <img alt="EMPIRE" class="logo-img" src="/Images/empire.png"/>
+
+       <img alt="GUMBALL" class="logo-img" src="/Images/gumball.png"/>
+
+       <img alt="MARIO" class="logo-img" src="/Images/mario.png"/>
+
+       <img alt="NARUTO" class="logo-img" src="/Images/naruto.png"/>
+
+       <img alt="PIKACHU" class="logo-img" src="/Images/pikachu.png"/>
+
+       <img alt="SONIC" class="logo-img" src="/Images/sonic.png"/>
+
+       <img alt="HOMEM ARANHA" class="logo-img" src="/Images/spyderman.png"/>
+
+       <img alt="SURF" class="logo-img" src="/Images/subway_surfers.png"/>
+   </div>
+ </div>
+</section>
+<!--...................... FOOTER......................-->
+<footer class='footer'>
+  <div class="boxContainer">
+     <div class="boxTexto">
+       <h2 class="titleSotero">Sotero</h2>
+       <h2 class="titleGames">Games</h2>
+     </div>
+     <figure id="fenixFooter">
+       <img alt="Img Fenix" src="/Images/fenixleft.png" class="fenixFooter"/> 
+     </figure>
+  </div>
+
+  <!--.....IMAGENS REDE SOCIAL.....-->
+
+    <a class="link" href="https://web.whatsapp.com" target="_blank">
+        <figure class='whatsap'>  
+          <img alt="Whatsap" src="/Images/whatsap.png" class="imgWhatsap"/>             
+          <figcaption>Whatsapp</figcaption>
+        </figure>
+    </a>
+   
+     <a class="link" href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank">
+        <figure class='facebook'>                
+            <img alt="Facebook" src="/Images/facebook.png" class="imgFacebook"/>  
+            <figcaption>Facebook</figcaption>
+        </figure>
+      </a>
+     <a class="link" href="https://is.gd/JIBGgr" target="_blank">
+        <figure class='email'> 
+          <img alt="Email" src="/Images/email3.png" class="imgEmail"/>  
+          <figcaption>E-mail</figcaption>
+        </figure>
+      </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+ 
+ /*.........LINHA 3 - CRIAR CONTA ..........*/
+ div.boxFormGeral{     
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto 30px;
+  padding:0;
+  width: 50%;
+  height: auto;
+  box-shadow: 1px 1px 3px #333333;  
+  
+}
+header.criarConta1{
+  background-color: #02004B;
+  display:flex;
+  width:100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position:relative;
+
+}
+h2.textCriar1{
+  padding:0;
+  margin:15px 0;
+  width: 100%;
+  height:auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: clamp(1.2rem, 1rem + 1.4vw, 2rem);    
+}
+
+
+/*...................FORMULÁRIO...............*/
+div.boxFormulario{
+  width: 100%; 
+  height: auto;
+  border:1px solid #fff;   
+  margin:0;
+  padding:0 20px 50px;
+  background-color: #FAFFE5;
+  box-sizing: border-box;
+} 
+figure.boxLogopessoa{
+  margin:3px auto 20px;
+  padding:0;
+  max-width: 100%;
+  height:auto;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+} 
+img.Logopessoa{
+  margin:0;
+  padding:0;
+  width: clamp(5rem, 2rem + 8vw, 35rem);
+}
+/*...........BOTÃO.........*/
+div.boxBotao{
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+.buttonPage1{
+  font-size: clamp(1.4rem, .8rem + 1.2vw, 2rem); 
+  background-color: #89ff68;
+  padding:5px 10px;
+  border-radius:3px;
+  box-shadow:1px 1px 4px #787878;
+  border:none;
+  width:50%;
+  cursor: pointer;
+}
+.buttonPage1:hover{    
+  background-color: #9eff83;
+}
+.buttonPage1:active{
+  box-shadow:-.5px .5px 4px #787878;
+  transform:scale(.98);
+}
+/*...........TEXTO  - INICIE SESSÃO.........*/
+div.temConta{
+  text-align: center;
+  color:#000000;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top:50px;
+  padding:0;  
+}
+p.textConta{
+  font-size: clamp(1.4rem, .5rem + 2vw, 5rem); 
+  width: 100%;
+  height: 100%; 
+  padding:0;
+  margin:0;
+}
+span.linkInicieSessao{
+  color:#002382; 
+  font-weight:bold;  
+ }
+div.temConta span:hover{
+  color:#140082; 
+  text-shadow: 1px 1px 5px #ffb6b6; 
+  box-sizing: border-box;
+}
+ /*........RESPONSIVIDADE.........*/
+
+ @media screen and (max-width: 819px) {
+  div.boxFormGeral{
+    width: 80%;    
+    display:flex;
+  }   
+  div.boxFormGeral{ 
+    margin:30px 0 0;  
+  }  
+  h2.textCriar1{
+    padding:0 50px 0 0;    
+  }
+ }
+ 

@@ -1,0 +1,134 @@
+body{
+background-color: #4c5d70;
+
+}
+/*.........LINHA 1..........*/
+section.container{
+     color: #fff;
+     display:flex;
+     flex-direction:column;
+     align-items: center;
+     justify-content: center;
+     max-width:100%;
+     padding:0;
+     margin:auto;
+     box-sizing:border-box;    
+}
+/*.............TÍTULO LOGIN........*/
+header.login{  
+     display:flex;
+     align-items: center;
+     justify-content: center;   
+     width: 100%;
+     height:auto ;
+     margin:0;
+     padding:0;
+     background:linear-gradient(180deg,#156bcf, #1c011b, #156bcf);
+}
+h2.text-Login{
+     max-width: 100%;
+     color: #fff;
+     padding: 20px 0;
+     margin:0;
+     font-size:clamp(1.2em, 1.5em, 3vw)
+}
+/*.......SOTERO GAMES.......*/
+div.container-form{     
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin:30px auto ;
+     padding:0;
+     width: 40%;
+     height: auto;
+     background: #504a52c7;
+     box-shadow: 1px 1px 3px #333333;
+     position:relative;
+}
+header.soteroGames{
+     display:flex;
+     background-color: #433d45;
+     width:100%;
+     height:auto;
+     box-sizing:inherit;
+     align-items:center;
+     justify-content:center;
+}
+h2.text-sotero{
+  padding:0;
+  margin:15px 0;
+  width: 100%;
+  height:auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+ /*.........FORMULÁRIO..............*/
+form.form{
+     width: 90%;
+     height:max-content;
+     margin:20px;
+     padding:  0.5rem;
+     box-sizing: inherit;
+     background-image:linear-gradient(#5f5f9e80, #3b333f80, #5f5f9e80), url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGUIv1A9wDrFGM9Zo6EnyTVlILrDC7Y8rKuzXkQOdgqujWp_JHgrluE9v8U62ItmcmN0hL2ICiRhVP0Lsn7ZnEn-exi4Hgo2nrza4AoloVhQtrp5eav2gEXEpK5ePOM491U3koQB-WemDtaAs7A8Sd4Zz13XcGQcg59MG3mx251-jZCq82tMIUv3c1INc/s200/fenixleft.png");
+     background-blend-mode:darken;
+     background-repeat: no-repeat;
+     background-size:contain;
+     background-position: right;
+     border:1px solid #fff;
+ } 
+ div.field {
+     padding-bottom:.5rem;
+     box-sizing: border-box;
+ }
+ div.field label{
+     display:block;
+     margin-bottom: 5px;
+     font-size: clamp(1.3rem, .3rem + 1vw, 2rem); 
+     color:#f9f9e5;
+ }
+ div.field input{
+     width: 100%;
+     box-sizing: inherit;
+     padding:8px 0;
+     margin-bottom: 5px;
+     background-color: #e6eaee;
+     border:none;
+     box-shadow: 1px 1px 3px #191919;
+ }
+ div.actions{
+     text-align: center;
+     margin-top:1rem;
+     max-width: 100%;
+     height:auto;
+ }
+ div input.botao{
+     font-size: clamp(1.2rem, .3rem + 1vw, 2rem); 
+     background-color: #89ff68;
+     width:40%;
+     height:auto;
+     padding:8px;
+     border:.5px solid #222;
+     border-radius:5px;
+     cursor: pointer;     
+     box-shadow:.5px .5px 4px #787878;
+ } 
+ div input.botao:hover{    
+     background-color: #d5ff9fdf;
+ }
+   div input.botao:active{
+     box-shadow:-.5px .5px 4px #787878;
+     transform:scale(.98);
+ }
+
+/*........RESPONSIVIDADE.........*/
+
+@media screen and (max-width: 819px) {
+    div.container-form{ 
+      width: 80%;
+    }  
+    h2.text-sotero{
+        padding:0 50px 0 0;        
+      }
+   
+   }
