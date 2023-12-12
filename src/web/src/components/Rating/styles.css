@@ -1,0 +1,12 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+  max-width: 346px;
+  width: 100%;
+}
+
+.rating .MuiSvgIcon-root {
+  width: 24px;
+  height: 24px;
+  color: rgb(250, 175, 0) !important;
+}

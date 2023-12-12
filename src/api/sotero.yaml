@@ -1,0 +1,941 @@
+_type: export
+__export_format: 4
+__export_date: 2023-12-06T17:37:20.546Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_2fa766346e794c5a8746939922ab65ba
+    parentId: fld_b59ad1781a694c9493cc00d5184e5c9f
+    modified: 1701883696295
+    created: 1701879970523
+    url: "{{ _.baseURL }}/login"
+    name: Login
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "guilherme@hotmail.com",
+        	"password": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701879852294
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b59ad1781a694c9493cc00d5184e5c9f
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701879842772
+    created: 1701879842772
+    name: AuthController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701879842772
+    _type: request_group
+  - _id: wrk_47eada67b88a4772b2029abff64aa0c1
+    parentId: null
+    modified: 1701477418067
+    created: 1701477418067
+    name: sotero.yaml
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_7311b25dfa6941eab469769a405de1d3
+    parentId: fld_b59ad1781a694c9493cc00d5184e5c9f
+    modified: 1701883097862
+    created: 1701692487266
+    url: "{{ _.baseURL }}/signup"
+    name: Sign up
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"first_name": "Guilherme",
+        	"last_name": "Arana",
+        	"username": "guilherme",
+        	"email": "guilherme@hotmail.com",
+        	"password": "12345678",
+        	"has_accepted_use_terms": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701879852194
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_772144be45054d2d9d86ceadb4fbb42c
+    parentId: fld_a7d92a7705374f3fbd479081c6bbe8b8
+    modified: 1701883673898
+    created: 1701696348797
+    url: "{{ _.baseURL }}/user/delete/06b4422f-fdcf-4cca-90a4-b80c740cdc80"
+    name: Delete user
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a7d92a7705374f3fbd479081c6bbe8b8
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701477429912
+    created: 1701477429912
+    name: UserController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701477429912
+    _type: request_group
+  - _id: req_6d46c7020cb2434cae468fe4a6b04b4d
+    parentId: fld_a7d92a7705374f3fbd479081c6bbe8b8
+    modified: 1701696343182
+    created: 1701693680137
+    url: "{{ _.baseURL }}/user/update/89e0359a-857a-4f61-b22f-7b27cefe19af"
+    name: Update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"first_name": "Antonio",
+        	"last_name": "Lazaro"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6f155b2b88214fa8afbf5b3cca953af6
+    parentId: fld_a7d92a7705374f3fbd479081c6bbe8b8
+    modified: 1701691633456
+    created: 1701691604185
+    url: "{{ _.baseURL }}/user/2f2faace-2507-4eaa-bcbe-89892307be30"
+    name: Show user
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_30932c99ef444211a2fe76a57ac97dd2
+    parentId: fld_a7d92a7705374f3fbd479081c6bbe8b8
+    modified: 1701477516624
+    created: 1701477432983
+    url: "{{ _.baseURL }}/user"
+    name: List
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_fc06c846658641eda24fbd59528da685
+    parentId: fld_29479c3dacbd473abbe42e1f8682a718
+    modified: 1701700320892
+    created: 1701699239896
+    url: "{{ _.baseURL }}/game/delete/39412914-81ba-4d9c-9305-9e734f10cddd"
+    name: Delete game
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_29479c3dacbd473abbe42e1f8682a718
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701699239884
+    created: 1701699239884
+    name: GameController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701329527008
+    _type: request_group
+  - _id: req_7b3c7c67c83a4b0cb217006093ae0e28
+    parentId: fld_29479c3dacbd473abbe42e1f8682a718
+    modified: 1701699686295
+    created: 1701699239894
+    url: "{{ _.baseURL }}/game/update/cb9f8233-8052-466f-ad00-96cf32379b0b"
+    name: Update game
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Counter Strike 2"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_13cfab4ab9ff4988be837f3ef92000dc
+    parentId: fld_29479c3dacbd473abbe42e1f8682a718
+    modified: 1701700181451
+    created: 1701699239892
+    url: "{{ _.baseURL }}/game/create"
+    name: Create game
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Grand Theft Auto: San Andreas",
+        	"developer": "Rockstar Games",
+        	"publisher": "Rockstar Games"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447283
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e9004008158c44079f91cc35e59c448c
+    parentId: fld_29479c3dacbd473abbe42e1f8682a718
+    modified: 1701699647566
+    created: 1701699239890
+    url: "{{ _.baseURL }}/game/cb9f8233-8052-466f-ad00-96cf32379b0b"
+    name: Show game
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9d79e3f902e743a8b8196cd5e61f27b7
+    parentId: fld_29479c3dacbd473abbe42e1f8682a718
+    modified: 1701699314556
+    created: 1701699239886
+    url: "{{ _.baseURL }}/game"
+    name: List games
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4ac3703ca8c4430fa0f40d89840fd89f
+    parentId: fld_d3e35c5603c54c3394f48a8b3e981d43
+    modified: 1701786831503
+    created: 1701780485141
+    url: "{{ _.baseURL }}/user-game/delete/44321b50-f8f5-4017-852b-6de4aeaddb0f"
+    name: Delete user game
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_d3e35c5603c54c3394f48a8b3e981d43
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701780485122
+    created: 1701780485122
+    name: UserGameController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701292551282
+    _type: request_group
+  - _id: req_911b895613564620a0946d4c7a8a9984
+    parentId: fld_d3e35c5603c54c3394f48a8b3e981d43
+    modified: 1701786804040
+    created: 1701780485138
+    url: "{{ _.baseURL }}/user-game/update/d3e5b834-8a9d-4e1c-bc90-9b0883af24da"
+    name: Update user game
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"grade": 4
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_df4854a3f6234066a0fe05937d2aea67
+    parentId: fld_d3e35c5603c54c3394f48a8b3e981d43
+    modified: 1701786757190
+    created: 1701780485135
+    url: "{{ _.baseURL }}/user-game/create"
+    name: Create user game
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_id": "2f2faace-2507-4eaa-bcbe-89892307be30",
+        	"game_id": "7b1918ed-9559-4706-a4c1-417eaadd3761",
+        	"grade": 5.0
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447283
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6952bdb8eb0c4b0cb3a5284b438c3ef2
+    parentId: fld_d3e35c5603c54c3394f48a8b3e981d43
+    modified: 1701786378827
+    created: 1701780485133
+    url: "{{ _.baseURL }}/user-game/2bcdb722-e814-4c84-b9d2-f088a7454500"
+    name: Show user game
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3e372d761c574dc4a24e6c65074fe539
+    parentId: fld_d3e35c5603c54c3394f48a8b3e981d43
+    modified: 1701780620288
+    created: 1701780485126
+    url: "{{ _.baseURL }}/user-game"
+    name: List user games
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c19a463e345b42d38ebb5bda2f491dbe
+    parentId: fld_1ed6650de6f0407db9edbf56adf7827a
+    modified: 1701802575342
+    created: 1701787181578
+    url: "{{ _.baseURL
+      }}/user-game-category/delete/304c3294-ca88-4f94-bd34-2b83d697fcdd"
+    name: Delete user game category
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_1ed6650de6f0407db9edbf56adf7827a
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701787181560
+    created: 1701787181560
+    name: UserGameCategoryController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701274063419
+    _type: request_group
+  - _id: req_c4d6782f89914d2b9284498aff86a337
+    parentId: fld_1ed6650de6f0407db9edbf56adf7827a
+    modified: 1701802631777
+    created: 1701787181576
+    url: "{{ _.baseURL
+      }}/user-game-category/update/349a42ec-6c4a-49ee-a243-8d75edf1537a"
+    name: Update user game category
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"game_category_id": "dc639c49-e301-406e-bed2-23d896b2f07b"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8a3510f95c614e50919df57c5af8cd4d
+    parentId: fld_1ed6650de6f0407db9edbf56adf7827a
+    modified: 1701802546248
+    created: 1701787181574
+    url: "{{ _.baseURL }}/user-game-category/create"
+    name: Create user game category
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"game_category_id": "6004fa08-a779-4b3a-b308-538640bd1301",
+        	"user_game_id": "d3e5b834-8a9d-4e1c-bc90-9b0883af24da"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447283
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_683df0df5c524d758011b3bfc6364176
+    parentId: fld_1ed6650de6f0407db9edbf56adf7827a
+    modified: 1701787274892
+    created: 1701787181572
+    url: "{{ _.baseURL }}/user-game-category/349a42ec-6c4a-49ee-a243-8d75edf1537a"
+    name: Show user game category
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0633026020ab4f77b40432a2b94acf1d
+    parentId: fld_1ed6650de6f0407db9edbf56adf7827a
+    modified: 1701787242870
+    created: 1701787181568
+    url: "{{ _.baseURL }}/user-game-category"
+    name: List user games category
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2de4b25131184913b366b6f096710553
+    parentId: fld_bbea0cd65b654b85994c0aa9df450c83
+    modified: 1701731425160
+    created: 1701728545519
+    url: "{{ _.baseURL }}/game-platform/delete/1b1b8582-024f-4ce0-9614-0b720130cbed"
+    name: Delete game platform
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_bbea0cd65b654b85994c0aa9df450c83
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701728545510
+    created: 1701728545510
+    name: GamePlatformController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701255575556
+    _type: request_group
+  - _id: req_e3308b94790445f6847daf392ecd071a
+    parentId: fld_bbea0cd65b654b85994c0aa9df450c83
+    modified: 1701731410158
+    created: 1701728545517
+    url: "{{ _.baseURL }}/game-platform/update/1b1b8582-024f-4ce0-9614-0b720130cbed"
+    name: Update game platform
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "A"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e8d5382033a643e58cb6d8bea87520e1
+    parentId: fld_bbea0cd65b654b85994c0aa9df450c83
+    modified: 1701731381406
+    created: 1701728545515
+    url: "{{ _.baseURL }}/game-platform/create"
+    name: Create game platform
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "X"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447283
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2bf3cda182954dcbb772db8a9b5b1396
+    parentId: fld_bbea0cd65b654b85994c0aa9df450c83
+    modified: 1701731304121
+    created: 1701728545514
+    url: "{{ _.baseURL }}/game-platform/de92a24f-f2dd-4601-b6ec-dc99806020af"
+    name: Show game platform
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_14772c238a304cb392f1f10455569bd7
+    parentId: fld_bbea0cd65b654b85994c0aa9df450c83
+    modified: 1701730560741
+    created: 1701728545511
+    url: "{{ _.baseURL }}/game-platform"
+    name: List games platform
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_381143582f6b4bc085675764e1f7fb7e
+    parentId: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    modified: 1701802719458
+    created: 1701802446478
+    url: "{{ _.baseURL }}/game-category/delete/e6ba251d-3679-495d-a0a4-27da7a279066"
+    name: Delete game category
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447483
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701802446460
+    created: 1701802446460
+    name: GameCategoryController
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1701218599830
+    _type: request_group
+  - _id: req_0920fc3e8a854786b04141c5cd121bca
+    parentId: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    modified: 1701802705923
+    created: 1701802446474
+    url: "{{ _.baseURL }}/game-category/update/e6ba251d-3679-495d-a0a4-27da7a279066"
+    name: Update game category
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "A"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447383
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cefaee9b4e4e402c95f3d5e7f4d52d0c
+    parentId: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    modified: 1701802682420
+    created: 1701802446472
+    url: "{{ _.baseURL }}/game-category/create"
+    name: Create game category
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "X"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447283
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e19a7a5858af48c7a72ba86c4410b1f2
+    parentId: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    modified: 1701802671379
+    created: 1701802446470
+    url: "{{ _.baseURL }}/game-category/6004fa08-a779-4b3a-b308-538640bd1301"
+    name: Show game category
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447183
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0862d32a6e33405483f6f45e3f265f08
+    parentId: fld_4cf2a65b5c2f439f97dccddb13546b4d
+    modified: 1701802503848
+    created: 1701802446465
+    url: "{{ _.baseURL }}/game-category"
+    name: List games category
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/2023.5.8
+    authentication: {}
+    metaSortKey: -1701477447083
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_56b10a2bd4a9804fe427a1a4e911857a624bd577
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701477418073
+    created: 1701477418073
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1701477418073
+    _type: environment
+  - _id: jar_56b10a2bd4a9804fe427a1a4e911857a624bd577
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701477418074
+    created: 1701477418074
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_5271e2bbe16d408cb8c285456e94147e
+    parentId: wrk_47eada67b88a4772b2029abff64aa0c1
+    modified: 1701689939649
+    created: 1701477418071
+    fileName: sotero.yaml
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_0926d8371787463eb99a764b206d573c
+    parentId: env_56b10a2bd4a9804fe427a1a4e911857a624bd577
+    modified: 1701477481099
+    created: 1701477455241
+    name: Development
+    data:
+      baseURL: http://localhost:3000
+    dataPropertyOrder:
+      "&":
+        - baseURL
+    color: "#52d920"
+    isPrivate: false
+    metaSortKey: 1701477455241
+    _type: environment

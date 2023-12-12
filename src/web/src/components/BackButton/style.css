@@ -1,0 +1,22 @@
+.MdArrowBack {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e9e9ea;
+  font-size: 16px;
+  line-height: 1.1em;
+  margin-top: 64px;
+  transition: 0.3s;
+}
+
+.MdArrowBack:hover {
+  transition: 0.3s;
+  color: #b847c9;
+}
+
+@media (max-width: 576px) {
+  .MdArrowBack {
+    font-size: 14px;
+    margin-top: 48px;
+  }
+}

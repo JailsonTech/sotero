@@ -1,0 +1,77 @@
+body {
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font-weight: 500;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:disabled,
+button:disabled {
+  cursor: not-allowed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+p,
+span,
+label {
+  font-weight: 400;
+}
+
+p,
+input,
+label {
+  font-size: 14px;
+
+  line-height: 1.4em;
+}
+
+p {
+  max-width: 30em;
+}
+
+label {
+  line-height: 1.1em;
+}

@@ -1,0 +1,88 @@
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 24px;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.form-container h1 {
+  color: #e9e9ea;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.1em;
+  margin-bottom: 8px;
+}
+
+.form-container__addGamerButton {
+  color: #d366e3;
+  font-weight: 600;
+}
+
+.GamerButton {
+  max-width: 346px;
+}
+
+.GamerButton-salvar {
+  max-width: 346px;
+}
+
+.register-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.register-game__title {
+  margin-bottom: 8px;
+
+  color: #e9e9ea;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    row-gap: 16px;
+    margin-top: 32px;
+  }
+
+  .form-container h1 {
+    font-size: 18px;
+  }
+
+  .form-container__addGamerButton {
+    color: #d366e3;
+    font-weight: 600;
+  }
+
+  .GamerButton {
+    max-width: 346px;
+  }
+
+  .GamerButton-salvar {
+    max-width: 346px;
+  }
+
+  .register-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+
+  .register-game__title {
+    margin-bottom: 8px;
+
+    color: #e9e9ea;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1em;
+  }
+}

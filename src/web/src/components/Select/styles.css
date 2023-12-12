@@ -1,0 +1,22 @@
+.MuiSelect-select {
+  color: #e9e9ea !important;
+  padding: 11px 14px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #bcbcd1 !important;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #b847c9 !important;
+  border-width: 1px !important;
+}
+
+.MuiSvgIcon-root {
+  color: #bcbcd1 !important;
+}
+
+.Mui-disabled {
+  color: #bcbcd144 !important;
+  -webkit-text-fill-color: #bcbcd199 !important;
+}

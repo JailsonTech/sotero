@@ -1,0 +1,65 @@
+.dialog__overlay {
+  width: 100vw;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dialog__modal {
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 640px;
+  width: 100%;
+  background: #363753;
+
+  position: fixed;
+  z-index: 101;
+  top: 220px;
+  left: 50%;
+  margin-left: -320px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.dialog__modal__title {
+  color: #e9e9ea;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+.dialog__modal__content {
+  color: #e9e9ea;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.dialog__modal__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.dialog__modal__buttons__button {
+  max-width: 120px;
+}
+
+@media (max-width: 1050px) {
+  .dialog__overlay {
+    height: 150vh;
+  }
+
+  .dialog__modal {
+    padding: 36px 24px;
+    max-width: 350px;
+    width: 100%;
+    background: #363753;
+    margin-left: -175px;
+  }
+}

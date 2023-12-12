@@ -1,0 +1,62 @@
+.sign-up__title {
+  color: #e9e9ea;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.sign-up__input {
+  margin-bottom: 24px;
+}
+
+.sign-up__button {
+  max-width: 346px !important;
+}
+
+.sign-up__separator {
+  color: #e9e9ea;
+  font-size: 12px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.sign-up__link {
+  color: #bcbcd1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1em;
+  text-decoration-line: underline;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 576px) {
+  .sign-up__title {
+    color: #e9e9ea;
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .sign-up__input {
+    margin-bottom: 16px;
+  }
+
+  .sign-up__button {
+    max-width: 360px !important;
+  }
+
+  .sign-up__separator {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .sign-up__link {
+    margin-bottom: 16px;
+  }
+}
