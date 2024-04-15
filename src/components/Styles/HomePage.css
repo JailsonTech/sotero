@@ -221,18 +221,6 @@ div.ConteudoTextoManhas{
   margin:0;
   display:block;
 }
-p.textManhas{ 
-  max-width:100%;
-  max-height:100%;
-  padding:0;
-  margin:0 0 0 20px;
-  translate:10px;
-  animation: manha 8s ease-in alternate, text 1s 5s ease-in-out 7;
-  position:absolute;
-  color:#FFFFFF;
-  font-size: clamp(0.875rem, 0.7442rem + 0.5365vw, 2rem);
-  transform:translateY(-40px); 
-}
 @keyframes manha {
   0%{
     opacity:0;
