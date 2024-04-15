@@ -69,8 +69,8 @@ export default function HomePage() {
 
       <div className="FundoEfeito">
         <div className='ConteudoTextoManhas'>
-          <p className='textManhas'>"Quem não tem as manhas não entra não"</p>
-          <figure className='figFenixEfeito'>
+          
+        <figure className='figFenixEfeito'>
             <img alt="Fenix" src={Fenixmove} className="fenixEfeito" />
           </figure>
         </div>
